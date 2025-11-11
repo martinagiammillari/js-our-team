@@ -57,8 +57,8 @@ const listElem = document.querySelector("ul");
 
 for (let i = 0; i < teamMembers.length; i++) {
   const curMember = teamMembers[i];
-  const item = `<li> ${curMember["name"]} - ${curMember["role"]} - ${curMember["email"]} </li > `
-  listElem.innerHTML= item
+  const item = `<li> ${curMember["name"]} - ${curMember["role"]} - ${curMember["email"]} </li > `;
+  listElem.innerHTML= listElem.innerHTML + item;
 }
 
 
